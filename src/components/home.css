@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* border: 0.1rem solid black; */
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.container::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../Images/bg.jpg") no-repeat center center/cover;
+  z-index: -1;
+  opacity: 0.2;
+  /* background-color: black; */
+}
+.heading {
+  margin-top: 5rem;
+  text-align: center;
+
+  font-size: 5rem;
+  font-family: "Tilt Prism", cursive;
+  color: rgb(0, 0, 0);
+  /* border: 0.1rem solid black; */
+  text-shadow: 0 0 1rem rgb(145, 138, 138);
+  border-radius: 2rem;
+}
+.Quote {
+  /* border: 0.1rem solid black; */
+  margin-bottom: 5rem;
+  text-align: center;
+  font-family: "Zeyada";
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+#animatedBox {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  position: relative;
+  /* border: 0.1rem solid black; */
+  height: 50vh;
+  top: 30rem; /*0rem*/
+  border-radius: 10rem;
+  background-color: rgba(45, 96, 38, 0.575);
+  transition: 1s;
+  filter: brightness(1.5);
+  animation: slideup 2s ease-in-out forwards;
+}
+@keyframes slideup {
+  0%{
+    top: 50rem;
+  }
+  80%{
+    top:-4rem;
+  }
+  100%{
+    top: 0;
+  }
+}
+.non-heading {
+  /* margin: 2rem 0; */
+
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: rgb(84, 51, 34);
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 1rem rgb(255, 255, 255);
+}
+.flex {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+}
+.flex-item {
+  width: 22rem;
+  font-size: 1.5rem;
+  /* border: 0.1rem solid black; */
+  font-family: "zeyada", cursive;
+  text-align: center;
+  line-height: 2rem;
+  /* word-spacing: 0.5rem; */
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.731);
+  color: rgb(202, 197, 192);
+  font-weight: bold;
+  /* text-shadow: 0 0 1rem white; */
+  box-shadow: 0 0 1rem rgb(0, 0, 0);
+  letter-spacing: 0.1rem;
+}
+#animatedBox button {
+  width: 15rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  font-family: "Viga";
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#animatedBox button:hover {
+  background-color: royalblue;
+  box-shadow: 0 0 0.5rem rgb(0, 0, 0);
+}

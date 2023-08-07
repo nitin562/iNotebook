@@ -1,0 +1,111 @@
+.loginArea {
+ 
+  /* justify-content: center; */
+  width: 100vw;
+  height: 100vh;
+  background: rgb(18, 15, 74);
+  background: linear-gradient(
+    240deg,
+    rgba(18, 15, 74, 1) 0%,
+    rgba(105, 62, 141, 1) 19%,
+    rgba(113, 100, 163, 1) 27%,
+    rgba(48, 93, 147, 1) 43%,
+    rgba(6, 6, 50, 1) 70%,
+    rgba(31, 109, 125, 1) 94%,
+    rgba(27, 63, 119, 1) 98%,
+    rgba(61, 66, 92, 1) 99%
+  );
+
+  /* border: 0.1rem solid white; */
+}
+.LoginForm {
+    background-color: rgba(255, 255, 255, 0.283);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.393);
+  border-radius: 1.5rem;
+  width: 35rem;
+  height: 40rem;
+  margin-top: 2rem;
+  margin-left: 21rem;
+}
+#profile{
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem 0; 
+    filter: blur(1rem) drop-shadow(0 0 0.5rem black);
+}
+.field {
+  display: flex;
+  margin-bottom: 1rem ;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+
+}
+.field img {
+  width: 3rem;
+  height: 3rem;
+  border-right: 0.01rem solid black;
+
+}
+.field input {
+  background-color: transparent;
+
+  height: 3rem;
+  outline: none;
+  border: none;
+  text-indent: 1rem;
+  font-size: 1.5rem;
+  font-family: "ubuntu";
+  font-weight: lighter;
+  
+}
+.submit-panel{
+    display: flex;
+    /* border: 0.1rem solid white; */
+    width: 23rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.submit-panel p{
+    color: rgb(79, 140, 245);
+    font-size: 1.2rem;
+    font-family: 'Arial Narrow';
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+.submit-panel p:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+.submit-panel button{
+    width: 10rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    background-color: rgb(248, 248, 249);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit-panel button:hover{
+    background-color: rgba(2, 255, 162, 0.596);
+    color: white;
+}
+
+
+.alertMsg{
+  width: 100%;
+
+  font-size: 1.2rem;
+
+  /* border: 0.1rem solid white; */
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.363);
+  text-align: center;
+  color: rgb(255, 153, 0);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}

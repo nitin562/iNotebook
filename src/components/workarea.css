@@ -1,0 +1,229 @@
+.workContainer {
+  width: 100%;
+  /* background: radial-gradient( circle 815px at 23.4% -21.8%,  rgba(9,29,85,1) 0.2%, rgba(0,0,0,1) 100.2% ); */
+  /* filter: brightness(1.5); */
+  background-image: linear-gradient(
+    67.2deg,
+    rgba(37, 208, 199, 1) -7.5%,
+    rgba(165, 90, 240, 1) 62.7%
+  );
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+.Creation {
+  width: 75%;
+  overflow: hidden scroll;
+    padding: 0.5rem;
+  
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 5rem;
+}
+.wrap p{
+    cursor: pointer;
+    /* border: 0.1rem solid black; */
+    text-indent: 3rem;
+    font-size: 1.2rem;
+    height: min-content;
+    font-family: 'Arial Narrow';
+    color: rgb(248, 248, 248);
+}
+
+.DisableScroll::-webkit-scrollbar{
+    background-color: transparent;
+}
+.scrollbar::-webkit-scrollbar {
+    
+  width: 5px;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  filter: brightness(1.5);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.107);
+    padding: 0.5rem;
+  /* border: 1px solid #fafafa; */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: white;
+
+}
+
+.titleHandle {
+  /* margin: 3rem 5rem; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* border: 0.1rem solid black; */
+
+}
+.titleHandle img {
+  width: 3rem;
+  height: 3rem;
+  filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.792));
+  padding: 0.1rem;
+
+  /* border-right: 0.1rem solid white; */
+}
+.titleHandle input {
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  font-family: "Philosopher";
+  text-align: center;
+  width: 90%;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  border: none;
+  /* border: 0.2rem solid white; */
+  color: rgb(0, 0, 0);
+  transition: 0.32s;
+  /* box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.249); */
+}
+.titleHandle input:focus {
+  box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.288);
+}
+#tag{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 15rem;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+  color:#2600ffab;
+}
+#tag::placeholder{
+  font-family: 'Arial Narrow',Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1rem;
+  
+}
+#note {
+  min-height: 20rem;
+  margin: 0rem 5rem;
+  width: 82.5%;
+  resize: vertical;
+  background-color: rgba(255, 255, 255, 0.142);
+  outline: none;
+  border: none;
+  /* border: 0.1rem solid rgba(255, 255, 255, 0.226); */
+  border-radius: 2rem;
+  text-indent: 2rem;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  font-family: "Thasadith", Arial, Helvetica, sans-serif;
+  color: rgb(255, 251, 251);
+  transition: 0.3s;
+}
+#note:focus{
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.42);
+
+}
+
+/* btns*/
+.btnPanel{
+    width: 82.5%;
+    background-color: #ffffff17;
+    border-radius: 2rem 0 1rem 5rem;
+    display: flex;
+    justify-content: flex-end;
+    /* border: 0.1rem solid white; */
+    margin: 2rem 5rem;
+}
+.btnPanel button{
+    cursor: pointer;
+    margin: 1rem;
+    width: 5rem;
+    font-size: 1.1rem;
+    border-radius: 1.56rem;
+    border: none;
+    transition: 0.3s;
+}
+.btnPanel button:enabled:hover{
+    background-color: #5c17fe48;
+    color: white;
+    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.24);
+}
+
+
+/* collection */
+.collection{
+    /* border: 0.1rem solid black; */
+    width: 24.9%;
+}
+#top{
+    background-color: #fe17a948;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+   
+}
+#top button:hover{
+    filter: invert();
+}
+#top img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#top p {
+    width: 100%;
+    /* border: 0.1rem solid black; */
+    font-family: 'Arsenal',Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    border-bottom: 0.5rem solid rgba(0, 0, 0, 0.107);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.662);
+}
+.NotLogined{
+    /* border: 0.1rem solid white; */
+    display: flex;
+    justify-content: center;
+    margin: 10rem 0;
+    
+}
+.NotLogined Button{
+    width: 10rem;
+    transition: 0.5s;
+    
+}
+.NotLogined Button:hover{
+    background-color: #3d3b3bd6;
+    letter-spacing: 0.2rem;
+}
+
+/* scroll for notesSide*/
+.AllNotes{
+  height: 90%;
+  overflow: hidden scroll;
+}
+.CountNotes{
+  margin: 0 1rem;
+}
+.CountNotes p:nth-child(1){
+  background-color: rgba(255, 255, 255, 0.187);
+}
+.CountNotes p{
+  text-align: right;
+  color: white;
+  font-size: 1.1rem;
+  
+  font-style: italic;
+}
+.CountNotes span{
+  color: rgb(0, 255, 187);
+}

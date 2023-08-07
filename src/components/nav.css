@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* flex */
+
+nav,
+.links,
+.Auth {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+ 
+  color: white;
+}
+nav {
+    display: inline-flex;
+    height: 100vh;
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    border-right: 0.1rem solid white;
+}
+.links{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu';
+    /* background-color: black; */
+   
+}
+.links a{
+    text-indent: 1rem;
+    width: inherit;
+    margin-top: 1rem;
+    /* transition: 0.3s; */
+    border-radius: 2rem;
+
+}
+.links a:hover{
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    color: blue;
+
+}
+
+.Auth{
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+    font-size: 1.5rem;
+}
+.Auth *{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+    transition: 0.5s;
+    
+}
+.LoginBtn:hover{
+    text-shadow: 0 0 0.5rem white;
+    background-color: #74ebd53a;
+    color: white;
+
+}
+.LoginBtn{
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+}
+.social-media {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.social-media img {
+  width: 3rem;
+  height: 3rem;
+  filter: invert();
+  cursor: pointer;
+}
+.social-media img:hover{
+    filter: drop-shadow(0 0 0.5rem white);
+}
+
+/* head */
+#head{
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 2rem;
+    border-bottom: 0.1rem solid white;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    
+
+    
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+ 
+}
+
+/* Logined */
+.loginPanel{
+  cursor: default;
+  display: flex;
+  /* border: 0.1rem solid purple; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 2rem 0;
+}
+.loginPanel img{
+  width: 8rem;
+  height: 8rem;
+  filter: drop-shadow(0 0 1rem white);
+}
+.loginPanel p{
+  font-size: 1.2rem;
+  font-family: 'Comfortaa';
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 0.5rem;
+  border-radius: 2rem;
+}

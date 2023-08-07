@@ -1,0 +1,61 @@
+.RegisterArea{
+    background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
+    width: 100vw;
+}
+.reg{
+    background-color: #ffffff33;
+    margin: 4rem 0 0 21rem;
+    /* border: 0.1rem solid white; */
+    width: 35rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+.reg i{
+    scale: 2;
+    filter: invert();
+    /* border: 0.1rem solid white; */
+    margin-right: 1rem;
+
+}
+#SpecialUser{
+    width: 15rem;
+    height: 15rem;
+    /* margin: 5rem; */
+    
+    
+    filter: drop-shadow(0 0 1rem white);
+    
+    
+    
+}
+/* Name */
+.informationField{
+    display: flex;
+    align-items: center;
+    /* border: 0.1rem solid white; */
+    margin-bottom: 2rem;
+
+    width: 80%;
+}
+.informationField input{
+    height: 2rem;
+    border: 0;
+    width: 87%;
+    text-indent: 1rem;
+    font-family: 'Ubuntu';
+    font-size: 1.3rem;
+    outline: none;
+    border-radius: 2rem;
+    transition: 0.5s;
+}
+.informationField input::placeholder{
+    font-family: 'Arial Narrow';
+    letter-spacing: 0.1rem;
+}
+.informationField input:focus{
+    box-shadow: 0 0 0.8rem white;
+}

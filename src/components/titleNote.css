@@ -1,0 +1,92 @@
+.Titlenotes{
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgba(12, 12, 113, 0.306);
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+
+#DeleteBtn{
+    /* border: 0.1rem solid white; */
+    background-color: transparent;
+    border: none;
+    cursor: pointer; 
+    margin-right: 0.5rem; 
+    transition: 0.5s;
+}
+.Titlenotes:hover img{
+    filter: invert();
+}
+#DeleteBtn:hover img{
+    filter: invert() drop-shadow(0 0 1rem white);
+    
+}
+#DeleteBtn img{
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: 0.5s;
+}
+#docTag{
+    display: inline;
+    font-family: 'Arial Narrow';
+    position: relative;
+    top: 0.6rem;
+    left: 10rem;
+    width: fit-content;
+    /* border: 0.1rem solid white; */
+   letter-spacing: 0.1rem;
+   color: white;
+   padding: 0 0.5rem;
+   background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
+   border-radius: 2rem;
+}
+.info{
+    /* border: 0.1rem solid white; */
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Titlenotes img{
+    width: 2.5rem;
+    height: 2.5rem;
+    filter: drop-shadow(0 0 1rem white);
+    transition: 0.5s;
+}
+.Titlenotes:hover{
+    background-color: rgb(16, 8, 109);
+    box-shadow: 0 0 0.5rem white;
+}
+.Titlenotes:hover img{
+    filter: invert();
+}
+.Titlenotes:hover #date{
+    color: rgb(240, 244, 4);
+}
+.Titlenotes:hover #note_title{
+    text-shadow: 0 0 1rem rgb(255, 255, 255);
+    color: rgb(231, 145, 18);
+
+}
+#note_title{
+    width: 50%;
+    /* border: 0.1rem solid rgb(199, 82, 82); */
+    color: rgb(255, 249, 240);
+    font-size: 1.5rem;
+    font-family:'PT Sans Narrow';
+}
+#date{
+    /* border: 0.1rem solid rgb(199, 82, 82); */
+    width: 50%;
+    font-family: 'Arial Narrow';
+    letter-spacing: 0.1rem;
+    color: aqua;
+    transition: 0.5s;
+    margin-top: 0.2rem;
+    
+}

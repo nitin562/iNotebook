@@ -1,0 +1,38 @@
+.alert{
+    z-index: 1;
+    position: absolute;
+    top: -4rem;
+    left: 45%;
+    width: 30rem;
+   
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5, 9, 114, 0.292) 0%, rgba(7,3,53,1) 97.5% );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    animation: slide 2s ease 0.5s 1  forwards;
+}
+@keyframes slide {
+    0%{
+        top: -4rem;
+    }
+    30%{
+        top:0rem;
+    }
+    70%{
+        top: 0rem;
+    }
+    100%{
+        top: -4rem;
+    }
+}
+.alert p{
+    color: white;
+    width: inherit;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Zeyada';
+    letter-spacing: 0.2rem;
+    
+}
