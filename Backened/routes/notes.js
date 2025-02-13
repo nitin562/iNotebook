@@ -111,4 +111,15 @@ router.delete('/deleteAll',fetchdata,async(req,res)=>{
   }
   
 })
+//endpoint - Notes
+router.get("/Notes", async (req, res) => {
+  try {
+    
+    const Notes = await Note.find({});
+    
+    res.json({Success:1,Notes});
+  } catch (err) {
+    res.status(500).json({ Success:0,message: "Internal error occurred", error: err });
+  }
+});
 module.exports = router;
